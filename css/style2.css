@@ -15,11 +15,6 @@
   position: relative;
 }
 
-.about-page > .navbar {
-  width: 100%;
-  align-self: stretch;
-}
-
 .title {
   color: var(--grays-white, #ffffff);
   text-align: left;
