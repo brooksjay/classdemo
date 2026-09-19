@@ -13,6 +13,10 @@
   height: 1024px;
   position: relative;
 }
+.about-page > .navbar {
+  width: 100%;
+  align-self: stretch;
+}
 .budt-748 {
   color: var(--grays-white, #ffffff);
   text-align: left;
