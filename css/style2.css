@@ -15,29 +15,25 @@
   position: relative;
 }
 
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-  background: var(--accents-brown, #ac7f5e);
-}
-
 .navbar {
-  margin: 0 !important;
-  padding: 0.5rem 0 !important;
-  width: 100% !important;
-  min-height: 56px;
+  width: 100%;
+  margin: 0;
+  padding: 8px 0;
   background-color: #212529 !important;
 }
 
 .navbar .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .navbar-brand {
   font-size: 1.25rem !important;
   font-weight: 400 !important;
-  margin-right: 1rem !important;
 }
 
 .navbar-nav {
@@ -48,7 +44,6 @@ body {
 .nav-link {
   font-size: 1rem !important;
   font-weight: 400 !important;
-  padding: 0.5rem 0.5rem !important;
 }
 
 .title {
