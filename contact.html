@@ -1,164 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./vars.css" />
-    <link rel="stylesheet" href="./css/style3.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./css/style3.css">
 
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        -webkit-font-smoothing: antialiased;
-      }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
 
-      body {
-        margin: 0 !important;
-        padding: 0 !important;
-        background-color: #b08364;
-      }
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100%;
+      background-color: #b08364;
+    }
 
-      .navbar {
-        margin: 0 !important;
-        padding: 0.5rem 0 !important;
-        width: 100% !important;
-        min-height: 56px;
-        background-color: #212529 !important;
-      }
+    body > .navbar {
+      display: flex !important;
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0.5rem 0 !important;
+      min-height: 56px;
+      background-color: #212529 !important;
+    }
 
-      .navbar .container {
-        width: 100%;
-        max-width: 1320px;
-      }
+    body > .navbar .container {
+      width: 100%;
+      max-width: 1320px;
+    }
 
-      .navbar-brand {
-        font-size: 1.25rem !important;
-        font-weight: 400 !important;
-        margin-right: 1rem !important;
-      }
+    body > .navbar .navbar-brand {
+      color: white !important;
+      font-size: 1.25rem !important;
+      font-weight: 400 !important;
+      margin-right: 1rem !important;
+    }
 
-      .navbar-nav {
-        display: flex;
-        flex-direction: row;
-      }
+    body > .navbar .navbar-nav {
+      display: flex;
+      flex-direction: row;
+    }
 
-      .nav-link {
-        font-size: 1rem !important;
-        font-weight: 400 !important;
-        padding: 0.5rem 0.5rem !important;
-      }
+    body > .navbar .nav-link {
+      color: rgba(255, 255, 255, 0.55) !important;
+      font-size: 1rem !important;
+      font-weight: 400 !important;
+      padding: 0.5rem 0.5rem !important;
+    }
 
-      .contact-page {
-        min-height: 100vh;
-        background-color: #b08364;
-        color: white;
-      }
+    .contact-page {
+      min-height: 100vh;
+      background-color: #b08364;
+      color: white;
+    }
 
-      .contact-content {
-        margin-left: 80px;
-        margin-top: 75px;
-        max-width: 1200px;
-      }
+    .contact-content {
+      margin-left: 80px;
+      margin-top: 75px;
+      max-width: 1200px;
+    }
 
-      .contact-content .title {
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
-        transform: none !important;
-        color: white;
-        font-size: 48px;
-        font-weight: bold;
-        line-height: 1.2;
-        margin-bottom: 35px;
-      }
+    .contact-content .title {
+      position: static !important;
+      width: auto !important;
+      height: auto !important;
+      transform: none !important;
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 35px;
+    }
 
-      .contact-content .subtitle {
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
-        transform: none !important;
-        color: white;
-        font-size: 26px;
-        line-height: 1.4;
-        margin-bottom: 50px;
-      }
+    .contact-content .subtitle {
+      position: static !important;
+      width: auto !important;
+      height: auto !important;
+      transform: none !important;
+      color: white;
+      font-size: 26px;
+      line-height: 1.4;
+      margin-bottom: 50px;
+    }
 
-      .contact-content .contacts {
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
-        transform: none !important;
-        color: white;
-        font-size: 26px;
-        line-height: 1.6;
-      }
-    </style>
+    .contact-content .contacts {
+      position: static !important;
+      width: auto !important;
+      height: auto !important;
+      transform: none !important;
+      color: white;
+      font-size: 26px;
+      line-height: 1.6;
+    }
+  </style>
 
-    <title>Contact Us</title>
-  </head>
+  <title>Contact Us</title>
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">BUDT748</a>
+<body>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">BUDT748</a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="contact-page">
-      <div class="contact-content">
-        <div class="title">Contact Us</div>
-
-        <div class="subtitle">
-          Reach out to the course team for support or inquiries.
-        </div>
-
-        <div class="contacts">
-          Professor Contact Details:
-          <br />
-          Paul T. Shapiro – pshapiro@umd.edu
-          <br />
-          <br />
-          TA Contact Details:
-          <br />
-          Bharath Sreekumar – bsreekum@umd.edu
-          <br />
-          Caifu Lin – clin0817@terpmail.umd.edu
-          <br />
-          Sumanth Devara – sdevara@umd.edu
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <div class="contact-page">
+    <div class="contact-content">
+
+      <div class="title">Contact Us</div>
+
+      <div class="subtitle">
+        Reach out to the course team for support or inquiries.
+      </div>
+
+      <div class="contacts">
+        Professor Contact Details:
+        <br>
+        Paul T. Shapiro – pshapiro@umd.edu
+        <br>
+        <br>
+        TA Contact Details:
+        <br>
+        Bharath Sreekumar – bsreekum@umd.edu
+        <br>
+        Caifu Lin – clin0817@terpmail.umd.edu
+        <br>
+        Sumanth Devara – sdevara@umd.edu
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
