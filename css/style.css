@@ -13,6 +13,37 @@
   height: 1024px;
   position: relative;
 }
+
+.navbar {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 8px 0 !important;
+  background-color: #212529 !important;
+}
+
+.navbar > .container {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 150px !important;
+}
+
+.navbar-brand {
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+  margin-right: 1rem !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.nav-link {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  padding: 0.5rem 0.5rem !important;
+}
 .budt-748 {
   color: var(--grays-white, #ffffff);
   text-align: left;
