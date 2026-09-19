@@ -24,6 +24,7 @@
       padding: 0;
       border: none;
       text-decoration: none;
+      background: none;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -35,7 +36,35 @@
 
     body {
       margin: 0;
-      background: var(--accents-brown, #ac7f5e);
+      padding: 0;
+    }
+
+    .navbar {
+      width: 100%;
+      margin: 0;
+      padding: 8px 0;
+      background-color: #212529 !important;
+    }
+
+    .navbar .container {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .navbar-brand {
+      font-size: 1.25rem !important;
+      font-weight: 400 !important;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .nav-link {
+      font-size: 1rem !important;
+      font-weight: 400 !important;
     }
 
     .about-page,
@@ -101,7 +130,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">BUDT748</a>
+      <a class="navbar-brand" href="index.html">BUDT748</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -137,9 +166,9 @@
 
     <div class="professor-paul-t-shapiro-teaching-assistants-bharath-sreekumar-caifu-lin-sumanth-devara-semester-details-spring-2027">
       Professor: Paul T. Shapiro
-      <br />
+      <br>
       Teaching Assistants: Bharath Sreekumar, Caifu Lin, Sumanth Devara
-      <br />
+      <br>
       Semester Details: Spring 2027
     </div>
 
